@@ -86,6 +86,7 @@ final class TaskListViewController: UITableViewController {
         tasksVC.taskList = taskList
     }
 
+    // MARK: - IBActiob
     @IBAction func sortingList(_ sender: UISegmentedControl) {
         taskLists = sender.selectedSegmentIndex == 0
         ? taskLists.sorted(byKeyPath: "date")
